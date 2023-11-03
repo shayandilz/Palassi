@@ -1,0 +1,208 @@
+// Fonts
+
+//custom classes
+@import "custom/variables";
+
+// Bootstrap
+@import 'modules/bootstrap';
+
+//custom base classes
+@import "custom/base";
+@import "custom/editor";
+@import "custom/button";
+// header
+@import "custom/header";
+
+@import "responsive";
+
+
+
+//Custom Fonts
+.Shippori{
+  font-family: 'Shippori Mincho', 'Yekan-en'!important;
+}
+//custom container
+.custom-container {
+  @extend .container;
+  max-width: $custom-container-width;
+}
+
+//swiper pagination
+.swiper1 > .swiper-pagination > .swiper-pagination-bullet {
+  width: 16px !important;
+  height: 16px !important;
+  background: transparent !important;
+  border: 2px solid #fff !important;
+}
+
+.swiper1 > .swiper-pagination > .swiper-pagination-bullet-active {
+  background: #fff !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+  left: 35px !important;
+  right: unset !important;
+}
+
+.swiper-pagination-custom-home {
+  .tooltip {
+    font-size: 14px;
+    opacity: 0.5;
+  }
+
+  .tooltip.swiper-pagination-bullet-active {
+    opacity: 1;
+    font-size: 20px;
+  }
+
+  .tooltip:first-child {
+    @extend .d-none;
+  }
+}
+
+//custom border
+.custom-border {
+  border: 1px solid #fff;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    transition: all 0.3s ease-in-out;
+    left: 0px;
+    top: 0px;
+  }
+  &:hover:before{
+    left: 20px;
+    top: 20px;
+  }
+}
+
+.base-timeline {
+  .base-timeline__item{
+    @extend .col-6, .col-lg-2;
+  }
+  list-style-type: none;
+  position: relative;
+  display: block;
+
+  :not(.swiper-pagination-bullet-active) {
+    .base-timeline__summary-text {
+      background-color: #232323 !important;
+      color: #fff !important;
+      border: 1px solid #fff !important;
+    }
+  }
+
+  .base-timeline__summary-text {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+}
+
+.base-timeline__item {
+
+  border: none !important;
+}
+
+
+
+.autoplay-progress {
+  position: absolute;
+  right: 0px;
+  top: -2px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: #fff;
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+
+//collections
+.custom-nav-button {
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+  color: #fff;
+  &.active {
+    border-bottom: 2px solid $primary;
+    font-weight: bold;
+  }
+}
+
+//services
+
+
+.service_image {
+  object-fit: cover;
+  height: 700px; /* Set a fixed height for all images */
+  transition: width 0.3s; /* Add a smooth transition effect */
+  h3 {
+    @extend .fw-bolder;
+    transition: bottom 0.4s ease-in-out;
+    z-index: 3;
+    bottom: -100%;
+  }
+  &:hover {
+    &:before {
+      opacity: 60%;
+    }
+
+    h3 {
+      bottom: 50%;
+    }
+  }
+}
+
+//Contact
+#gform_1 {
+  @extend .position-relative;
+
+  .gform_footer {
+    @extend .position-absolute, .bottom-0, .end-0, .p-0, .m-0, .text-white;
+    #gform_submit_button_1{
+      padding: 10px 15px 5px 15px!important;
+      line-height: 25px!important;
+      transition: all 0.3s ease-in-out;
+      color: #fff;
+      @extend .text-uppercase, .fs-6;
+      &:hover{
+        background-color: #fff!important;
+        color: #0e0e0e!important;
+      }
+    }
+  }
+
+  input, textarea {
+    @extend .text-white;
+    &::placeholder {
+      @extend .text-white; /* your color here */
+    }
+
+    @extend .border-1, .border-white, .bg-transparent;
+  }
+}

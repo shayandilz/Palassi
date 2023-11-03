@@ -1,0 +1,112 @@
+@include media-breakpoint-up(lg) {
+  .home main .swiper1 > .swiper-wrapper{
+    height: 100vh;
+  }
+  .-translate-middle-y{
+    transform: translateY(50%);
+  }
+  .swiper-pagination-about{
+    position: absolute!important;
+    bottom: -50px!important;
+  }
+  .min-vh-75 {
+    min-height: 75vh;
+  }
+  .base-timeline::before {
+    content: '';
+    width: 100%;
+    border-top: 2px solid #fff;
+    display: inline-block;
+    position: absolute;
+    top: 85%;
+    z-index: -1;
+
+  }
+  .service_image:before {
+    content: "";
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0%;
+  }
+}
+@include media-breakpoint-down(lg) {
+  .linkPortfolio {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .navPortfolio {
+    display: block;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .base-timeline{
+    height: 230px!important;
+    .base-timeline__item{
+      margin-bottom: -15px!important;
+    }
+  }
+  .service_image{
+    width: 100%!important;
+    height: 150px!important;
+    border: 1px solid #969696;
+    h3{
+      bottom: 35% !important;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: 50%;
+    }
+  }
+}
+@include media-breakpoint-down(xl) {
+
+}
+@include media-breakpoint-down(sm) {
+  .fs-1 {
+    font-size: calc(1.325rem + 1.4vw) !important;
+  }
+  .fs-2 {
+    font-size: calc(1.275rem + 0.8vw) !important;
+  }
+  .fs-3 {
+    font-size: calc(1.25rem + 0.5vw) !important;
+  }
+  .fs-4 {
+    font-size: calc(1.225rem + 0.2vw) !important;
+  }
+  .fs-5 {
+    font-size: 1.2rem !important;
+  }
+  .fs-6 {
+    font-size: 1rem !important;
+  }
+  .display-1{
+    font-size: calc(1.8rem + 1.4vw) !important;
+  }
+   p, span {
+    line-height: 1.7;
+  }
+  small, .small {
+    font-size: 0.875rem !important;
+  }
+  .font-size-icon{
+    font-size: 80px;
+  }
+  .button-white.button{
+    padding: 0.25rem!important;
+  }
+}
+
+@include media-breakpoint-up(md) {
+}
+@include media-breakpoint-down(md) {
+}

@@ -1,0 +1,74 @@
+//
+// Base styles
+//
+
+.btn {
+  display: inline-block;
+  font-family: $btn-font-family;
+  font-weight: $btn-font-weight;
+  line-height: $btn-line-height;
+  color: $body-text;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
+  @include transition($btn-transition);
+  outline: 0 !important;
+  z-index: 1;
+  position: relative;
+
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+    pointer-events: none;
+    opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
+  }
+}
+
+@mixin dynamic-button($bg-color, $text-color, $rgba) {
+
+  &.button {
+    position: relative;
+    overflow: hidden;
+    max-width: 200px;
+    text-align: center;
+    display: block;
+    background-color: transparent;
+    padding: 13px 20px 10px 20px;
+    color: $text-color;
+    font-weight: bold;
+    border: 2px solid $bg-color;
+    box-shadow: 0 0 0 0 $bg-color;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      transform: translate(10px, 10px);
+      box-shadow: -10px -10px 0 rgba($rgba, $rgba, $rgba, 1),
+      -9px -9px 0 rgba($rgba, $rgba, $rgba, 1),
+      -8px -8px 0 rgba($rgba, $rgba, $rgba, 1),
+      -7px -7px 0 rgba($rgba, $rgba, $rgba, 1),
+      -6px -6px 0 rgba($rgba, $rgba, $rgba, 1),
+      -5px -5px 0 rgba($rgba, $rgba, $rgba, 1),
+      -4px -4px 0 rgba($rgba, $rgba, $rgba, 1),
+      -3px -3px 0 rgba($rgba, $rgba, $rgba, 1),
+      -2px -2px 0 rgba($rgba, $rgba, $rgba, 1),
+      -1px -1px 0 rgba($rgba, $rgba, $rgba, 1);
+    }
+  }
+
+}
+
+// Define classes for different button colors
+.button-white {
+  @include dynamic-button($white, white, 255);
+}
+
+.button-dark {
+  @include dynamic-button($dark, black, 0);
+}
