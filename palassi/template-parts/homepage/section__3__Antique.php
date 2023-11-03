@@ -1,10 +1,10 @@
 <section
-        class="h-100 w-100 position-relative row align-items-center px-0 mx-0 justify-content-center justify-content-lg-end section2 aos-remover bg-secondary pb-5 pb-lg-0"
+        class="h-100 w-100 position-relative row align-items-center px-0 mx-0 justify-content-center justify-content-lg-end section2 bg-secondary pb-5 pb-lg-0"
         data-name="<?= get_field('section_name_3'); ?>">
 
     <div class="col-lg-10 col-12 row justify-content-center justify-content-lg-start px-0 align-items-center pt-lg-5">
         <div class="col-lg-6 pt-lg-5 pt-4">
-            <h1 class="text-primary display-1 fw-bolder text-uppercase" data-aos="fade-down" data-aos-delay="100">
+            <h1 class="text-primary display-1 fw-bolder" data-aos="fade-down" data-aos-delay="100">
                 <?= get_field('antique_title'); ?>
             </h1>
         </div>

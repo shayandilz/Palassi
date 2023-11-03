@@ -1,10 +1,10 @@
 <section
-        class="h-100 w-100 position-relative row align-items-center px-0 mx-0 pb-5 pb-lg-0 justify-content-center justify-content-lg-end section2 aos-remover bg-secondary"
+        class="h-100 w-100 position-relative row align-items-center px-0 mx-0 pb-5 pb-lg-0 justify-content-center justify-content-lg-end bg-secondary"
         data-name="<?= get_field('section_name_4'); ?>">
 
     <div class="col-lg-10 col-12 row justify-content-md-start justify-content-center align-items-center">
         <div class="col-lg-6 px-0">
-            <h1 class="text-primary display-1 fw-bolder text-uppercase" data-aos="fade-down" data-aos-delay="100">
+            <h1 class="text-primary display-1 fw-bolder" data-aos="fade-down" data-aos-delay="100">
                 <?= get_field('history_title'); ?>
             </h1>
         </div>

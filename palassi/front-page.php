@@ -39,18 +39,18 @@ if (have_posts()) {
                 get_template_part('template-parts/homepage/section__4__Story');
                 ?>
             </div>
-            <div class="swiper-slide bg-body" data-hash="Showrooms">
-                <?php
-                //    <!--Showrooms -->
-                get_template_part('template-parts/homepage/section__5__Showrooms');
-                ?>
-            </div>
-            <div class="swiper-slide bg-body" data-hash="Expertise">
-                <?php
-                //    <!--Expertise -->
-                get_template_part('template-parts/homepage/section__6__Expertise');
-                ?>
-            </div>
+<!--            <div class="swiper-slide bg-body" data-hash="Showrooms">-->
+<!--                --><?php
+//                //    <!--Showrooms -->
+//                get_template_part('template-parts/homepage/section__5__Showrooms');
+//                ?>
+<!--            </div>-->
+<!--            <div class="swiper-slide bg-body" data-hash="Expertise">-->
+<!--                --><?php
+//                //    <!--Expertise -->
+//                get_template_part('template-parts/homepage/section__6__Expertise');
+//                ?>
+<!--            </div>-->
             <div class="swiper-slide bg-body" data-hash="Shipping">
                 <?php
                 //    <!--Shipping -->

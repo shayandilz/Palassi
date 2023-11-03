@@ -6,7 +6,7 @@
         $hero_video = get_field('hero_video');
         if ($hero_video): ?>
             <div class="h-100">
-                <video id="hero_video" autoplay muted loop width="100%" class="w-100 h-100 object-fit-cover">
+                <video id="hero_video" autoplay muted loop playsinline width="100%" class="w-100 h-100 object-fit-cover">
                     <source src="<?php echo esc_url($hero_video['url']); ?>" type="video/mp4">
                 </video>
             </div>

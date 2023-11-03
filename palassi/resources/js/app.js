@@ -11,32 +11,32 @@ $(document).ready(function () {
 })
 
 // AOS DISABLER FOR MOBILE PHONES
-class AOSDisabler {
-    constructor(className) {
-        this.elements = document.querySelectorAll('.' + className);
-        this.initialize();
-    }
+// class AOSDisabler {
+    // constructor(className) {
+    //     this.elements = document.querySelectorAll('.' + className);
+    //     this.initialize();
+    // }
+    //
+    // initialize() {
+    //     if (this.isMobileScreenSize()) {
+    //         this.disableAOSOnMobile();
+    //     }
+    // }
+    //
+    // isMobileScreenSize() {
+    //     return window.matchMedia('(max-width: 767px)').matches;
+    // }
 
-    initialize() {
-        if (this.isMobileScreenSize()) {
-            this.disableAOSOnMobile();
-        }
-    }
-
-    isMobileScreenSize() {
-        return window.matchMedia('(max-width: 767px)').matches;
-    }
-
-    disableAOSOnMobile() {
-        this.elements.forEach((element) => {
-            const elementsWithAOS = element.querySelectorAll('[data-aos]');
-
-            elementsWithAOS.forEach((aosElement) => {
-                aosElement.setAttribute('data-aos', 'none');
-            });
-        });
-    }
-}
+    // disableAOSOnMobile() {
+    //     this.elements.forEach((element) => {
+    //         const elementsWithAOS = element.querySelectorAll('[data-aos]');
+    //
+    //         elementsWithAOS.forEach((aosElement) => {
+    //             aosElement.setAttribute('data-aos', 'none');
+    //         });
+    //     });
+    // }
+// }
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -45,8 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     require('./homepageAboutus')
     require('./homepageHistory')
     require('./homepagePortfolio')
-    // AOS INIT
-    AOS.init();
+
     // HERO FRONT PAGE VIDEO PLAY AND PAUSE
     var video = document.getElementById('hero_video');
     var muteButton = document.getElementById('mute-button');
@@ -64,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
             muteIcon.className = 'bi bi-volume-mute fs-5 lh-0';
         }
     });
-    const aosDisabler = new AOSDisabler('aos-remover');
+    // const aosDisabler = new AOSDisabler('aos-remover');
 
     /*---------------------     MENU & HEADER     ---------------------------*/
 //toggle header on time
@@ -182,7 +181,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         });
                     }, 400);
                     if (activeSlide === slides.length - 1) {
-                        console.log('sdfsdf')
                         customPagination.classList.remove('aos-animate')
                     }
                 }
@@ -198,11 +196,11 @@ document.addEventListener('DOMContentLoaded', function () {
             $('.home main > div').removeClass('swiper')
             $('.home main > div > div').removeClass('swiper-wrapper')
             $('.home main > div > div > div').removeClass('swiper-slide')
-            let disableAnimationElements = document.querySelectorAll('[data-aos-disable]');
-            disableAnimationElements.forEach(function (element) {
-                element.removeAttribute('data-aos');
-                element.removeAttribute('data-aos-duration');
-            });
+            // let disableAnimationElements = document.querySelectorAll('[data-aos-disable]');
+            // disableAnimationElements.forEach(function (element) {
+            //     element.removeAttribute('data-aos');
+            //     element.removeAttribute('data-aos-duration');
+            // });
         }
     }
 
@@ -347,7 +345,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         });
 
-    }
+    }    // AOS INIT
+    AOS.init();
 
     $('.menu').on('click', '.back-button', function (e) {
         e.preventDefault();

@@ -1,10 +1,10 @@
 <section
-        class="h-100 w-100 position-relative row align-items-center px-0 mx-0 justify-content-end section2 aos-remover bg-secondary pb-5 pb-lg-0"
+        class="h-100 w-100 position-relative row align-items-center px-0 mx-0 justify-content-end bg-secondary pb-5 pb-lg-0"
         data-name="<?= get_field('section_name_7'); ?>">
 
     <div class="col-lg-10 col-12 row justify-content-start align-items-center">
         <div class="col-12 px-0 pb-3 pb-lg-0">
-            <h1 class="text-primary display-4 fw-bolder text-uppercase" data-aos="fade-down" data-aos-delay="100">
+            <h1 class="text-primary display-4 fw-bolder" data-aos="fade-down" data-aos-delay="100">
                 <?= get_field('service_title'); ?>
             </h1>
         </div>
