@@ -4,7 +4,7 @@
 
     <div class="col-lg-10 col-12 row justify-content-md-start justify-content-center align-items-center">
         <div class="col-lg-6 px-0">
-            <h1 class="text-primary display-1 fw-bolder" data-aos="fade-down" data-aos-delay="100">
+            <h1 class="text-primary display-5 fw-bolder" data-aos="fade-down" data-aos-delay="100">
                 <?= get_field('history_title'); ?>
             </h1>
         </div>
@@ -35,7 +35,7 @@
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <h4 data-aos="fade-in" data-aos-delay="100" class="text-primary"><?= $title; ?></h4>
-                                            <div class="text-white text-justify fs-6 fw-lighter lh-lg" data-aos="fade-in" data-aos-delay="300"><?= $text; ?></div>
+                                            <div class="text-white text-justify fs-6 fw-lighter lh-lg mt-5" data-aos="fade-in" data-aos-delay="300"><?= $text; ?></div>
                                         </div>
                                         <div class="col-lg-6 ">
                                             <div class="ratio ratio-4x3" data-aos="fade-left" data-aos-delay="500">

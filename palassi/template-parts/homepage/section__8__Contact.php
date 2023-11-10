@@ -4,7 +4,7 @@
 
     <div class="col-lg-10 col-12 row px-0 justify-content-start align-items-center">
         <div class="col-lg-6">
-            <h1 class="text-primary display-1 fw-bolder" data-aos="fade-down" data-aos-delay="100">
+            <h1 class="text-primary display-5 fw-bolder" data-aos="fade-down" data-aos-delay="100">
                 <?= get_field('contact_title'); ?>
             </h1>
         </div>
@@ -13,7 +13,7 @@
                 <?php the_field('map_embed', 'option'); ?>
             </div>
             <div class="col-lg-5 fs-5">
-                <div class="d-flex flex-column align-items-start text-start justify-content-center gap-3">
+                <div class="d-flex flex-column align-items-start text-start justify-content-center gap-3 fs-6">
                     <?php $mobileNumber = get_field('mobile_number', 'option');
                     if ($mobileNumber) { ?>
                     <div class="d-inline-flex gap-3 align-items-center justify-content-start text-white" data-aos="fade-down" data-aos-delay="200">
@@ -57,7 +57,7 @@
                         endwhile;
                     endif; ?>
                 </ul>
-                <div class="d-flex flex-column align-items-start text-start justify-content-center gap-3">
+                <div class="d-flex flex-column align-items-start text-start justify-content-center gap-3 fs-6">
                     <?php $addressOffice = get_field('address_one', 'option');
                     if ($addressOffice) { ?>
                         <div class="d-inline-flex gap-3 align-items-center justify-content-start text-white" data-aos="fade-down" data-aos-delay="600">

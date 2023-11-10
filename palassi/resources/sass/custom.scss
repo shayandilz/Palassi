@@ -21,6 +21,9 @@
 .Shippori{
   font-family: 'Shippori Mincho', 'Yekan-en'!important;
 }
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Shippori Mincho', 'Yekan-en'!important;
+}
 //custom container
 .custom-container {
   @extend .container;
@@ -185,11 +188,13 @@
   .gform_footer {
     @extend .position-absolute, .bottom-0, .end-0, .p-0, .m-0, .text-white;
     #gform_submit_button_1{
+      margin-bottom: 11px!important;
+      font-size: 1.2rem!important;
       padding: 10px 15px 5px 15px!important;
       line-height: 25px!important;
       transition: all 0.3s ease-in-out;
       color: #fff;
-      @extend .text-uppercase, .fs-6;
+      @extend .text-capitalize;
       &:hover{
         background-color: #fff!important;
         color: #0e0e0e!important;

@@ -6,26 +6,22 @@
             while (have_rows('social_accounts', 'option')) : the_row();
                 $svg = get_sub_field('svg');
                 $url = get_sub_field('urk'); ?>
-                    <a href="<?= esc_url($url); ?>">
-                        <?= $svg; ?>
-                    </a >
+                <a href="<?= esc_url($url); ?>">
+                    <?= $svg; ?>
+                </a>
                 <?php
                 $first = false;
             endwhile;
         endif; ?>
     </ul>
 </div>
-<a class="navbar-brand z-top col-8 d-flex justify-content-center"
-
+<a class="navbar-brand z-top col-8 d-flex flex-column align-items-center justify-content-center Shippori gap-1 text-white"
    href="<?php echo esc_url(get_home_url()) ?>">
-    <?php
-    $logo = get_field('site_logo', 'option');
-    ?>
-<!--    <img class="lazy"-->
-<!--         width="50"-->
-<!--         src="--><?php //= $logo['url'] ?><!--"-->
-<!--         alt="--><?php //= get_bloginfo('name'); ?><!--">-->
-    <span class="Shippori fs-3 text-white fw-bolder">REZA PALASSI</span>
+    <span class="fw-bolder" style="font-size: 32px;">REZA PALASSI</span>
+    <div class="d-flex flex-column align-items-center justify-content-center gap-1 pb-2">
+        <span style="font-size: 17px;letter-spacing: 2px">Fine Persian Carpets</span>
+        <span style="font-size: 18px;letter-spacing: 4px">Since 1875</span>
+    </div>
 </a>
 
 <div class="col-2 d-flex justify-content-end">

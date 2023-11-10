@@ -28,6 +28,23 @@
                     <?= get_field('phone_number', 'option'); ?>
                     <i class="bi bi-telephone-fill"></i></a>
             </div>
+            <div>
+                <ul class="list-unstyled d-lg-flex align-items-center d-none justify-content-center mb-0 gap-4">
+                    <?php
+                    if (have_rows('social_accounts', 'option')):
+                        $first = true; // Variable to track the first <li> element
+                        while (have_rows('social_accounts', 'option')) : the_row();
+                            $svg = get_sub_field('svg');
+                            $url = get_sub_field('urk'); ?>
+                            <a href="<?= esc_url($url); ?>">
+                                <?= $svg; ?>
+                            </a >
+                            <?php
+                            $first = false;
+                        endwhile;
+                    endif; ?>
+                </ul>
+            </div>
         </div>
     </nav>
 

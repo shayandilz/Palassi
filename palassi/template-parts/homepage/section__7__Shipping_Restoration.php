@@ -4,7 +4,7 @@
 
     <div class="col-lg-10 col-12 row justify-content-start align-items-center">
         <div class="col-12 px-0 pb-3 pb-lg-0">
-            <h1 class="text-primary display-4 fw-bolder" data-aos="fade-down" data-aos-delay="100">
+            <h1 class="text-primary display-5 fw-bolder" data-aos="fade-down" data-aos-delay="100">
                 <?= get_field('service_title'); ?>
             </h1>
         </div>
@@ -26,7 +26,7 @@
                             <a href="<?php the_permalink(); ?>" style="width: <?php echo $postWidth . '%'; ?>;" onmouseover="this.style.width='<?php echo $postWidth + 10 . '%'; ?>';" onmouseout="this.style.width='<?php echo $postWidth . '%'; ?>';" class="service_image overflow-hidden position-relative">
                                 <img class="w-100 h-100 object-fit" src="<?php echo $service_image_url; ?>"
                                      alt="<?php the_title(); ?>">
-                                <h3 class="position-absolute end-0 start-0 text-center text-white fs-3">
+                                <h3 class="position-absolute end-0 start-0 text-center text-white fs-6 px-1">
                                     <?php the_title() ?>
                                 </h3>
                             </a>

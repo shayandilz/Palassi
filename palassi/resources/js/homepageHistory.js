@@ -17,13 +17,14 @@ const swiperHistory = new Swiper('.swiperHistory', {
     spaceBetween: 0,
     autoplay: {
         delay: 7500,
-        disableOnInteraction: false
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
     },
     pagination: {
         el: '.swiper-pagination-history',
         clickable: true,
         renderBullet: function (index, className) {
-            return '<li class="d-flex d-lg-block justify-content-center align-items-center base-timeline__item opacity-100 mx-0 position-relative lazy bg-transparent z-top ' + className + '"  data-aos="fade-in" data-aos-delay="'+ index +'00" ><span class="base-timeline__summary-text bg-white lazy rounded-2 text-center text-secondary py-2 px-2 position-absolute lh-base small ">' + (historyDate[index]) + '</span></li>';
+            return '<li class="d-flex d-lg-block justify-content-center align-items-center base-timeline__item opacity-100 mx-0 position-relative lazy bg-transparent z-top ' + className + '" style="font-size: 18px"  data-aos="fade-in" data-aos-delay="'+ index +'00" ><span class="base-timeline__summary-text bg-white lazy rounded-2 text-center text-secondary py-2 px-2 position-absolute lh-base ">' + (historyDate[index]) + '</span></li>';
         }
     },
 

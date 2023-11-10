@@ -4,11 +4,11 @@
 
     <div class="col-lg-10 col-12 row justify-content-center justify-content-lg-start px-0 align-items-center pt-lg-5">
         <div class="col-lg-6 pt-lg-5 pt-4">
-            <h1 class="text-primary display-1 fw-bolder" data-aos="fade-down" data-aos-delay="100">
+            <h1 class="text-primary display-5 fw-bolder" data-aos="fade-down" data-aos-delay="100">
                 <?= get_field('portfolio_title'); ?>
             </h1>
         </div>
-        <div class="row">
+        <div class="row mt-lg-4">
             <div class="col-lg-12">
                 <ul class="navPortfolio nav nav-fill overflow-x-scroll flex-lg-wrap flex-nowrap gap-2 border-bottom border-white justify-content-start mb-4"
                     data-aos="fade-left" data-aos-delay="500"
@@ -39,7 +39,7 @@
                             $i++;
                             $category_id = $term->term_id; ?>
                             <li class="linkPortfolio nav-item" role="presentation">
-                                <button class="px-3 py-2 text-uppercase custom-nav-button fs-6 <?php if ($i == 1) {
+                                <button class="px-3 py-2 text-capitalize custom-nav-button fs-6 <?php if ($i == 1) {
                                     echo 'active';
                                 } ?>"
                                         id="cat-<?= $category_id; ?>-tab"
