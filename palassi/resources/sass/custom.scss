@@ -18,11 +18,9 @@
 
 
 //Custom Fonts
-.Shippori{
-  font-family: 'Shippori Mincho', 'Yekan-en'!important;
-}
+
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Shippori Mincho', 'Yekan-en'!important;
+  font-family: 'FuturaBT'!important;
 }
 //custom container
 .custom-container {
@@ -153,7 +151,6 @@ h1,h2,h3,h4,h5,h6{
   color: #fff;
   &.active {
     border-bottom: 2px solid $primary;
-    font-weight: bold;
   }
 }
 
@@ -186,7 +183,7 @@ h1,h2,h3,h4,h5,h6{
   @extend .position-relative;
 
   .gform_footer {
-    @extend .position-absolute, .bottom-0, .end-0, .p-0, .m-0, .text-white;
+    @extend .position-absolute, .bottom-0, .end-0, .p-0, .m-0, .text-warning;
     #gform_submit_button_1{
       margin-bottom: 11px!important;
       font-size: 1.2rem!important;
@@ -203,9 +200,9 @@ h1,h2,h3,h4,h5,h6{
   }
 
   input, textarea {
-    @extend .text-white;
+    @extend .text-warning;
     &::placeholder {
-      @extend .text-white; /* your color here */
+      @extend .text-warning; /* your color here */
     }
 
     @extend .border-1, .border-white, .bg-transparent;

@@ -7,8 +7,7 @@ function theme_scripts()
 {
     //    <!-- Icons AND fonts -->
     wp_enqueue_style('bootstrap-icons', get_template_directory_uri() . '/public/fonts/bootstrap/bootstrap-icons.css');
-    wp_enqueue_style('font-en', get_template_directory_uri() . '/public/fonts/YekanBakh-en/fontface.css', array());
-    wp_enqueue_style('font-google', get_template_directory_uri() . '/public/fonts/googlefonts/fontface.css', array());
+    wp_enqueue_style('font-en', get_template_directory_uri() . '/public/fonts/futura/fontface.css', array());
 // CSS files
     wp_enqueue_style('style', get_stylesheet_directory_uri() . '/public/css/style.css', array());
 //    JS files

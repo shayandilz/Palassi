@@ -14,7 +14,7 @@
         <?php
         wp_nav_menu(array(
             'theme_location' => 'headerMenuLocation',
-            'menu_class' => 'navbar-nav pe-0 text-white list-unstyled text-center fs-4 w-100 position-relative lh-sm',
+            'menu_class' => 'navbar-nav pe-0 text-warning list-unstyled text-center fs-4 w-100 position-relative lh-sm',
             'container' => false,
             'menu_id' => 'navbarTogglerMenu',
             'item_class' => 'nav-item',

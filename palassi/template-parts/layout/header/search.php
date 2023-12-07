@@ -13,7 +13,7 @@ $slugEN = strpos($url, 'en');
                    placeholder="<?php echo $slugEN ? 'Search' : 'جستجو'; ?>"
                    aria-label="Search">
 
-            <button type="submit" class="search-submit position-absolute start-50 end-50 top-100 px-2 border-1 border-white text-white mt-3 px-4 py-2 translate-middle-x" style="background-color: rgba(255, 255, 255, 0.15);width: fit-content">
+            <button type="submit" class="search-submit position-absolute start-50 end-50 top-100 px-2 border-1 border-white text-warning mt-3 px-4 py-2 translate-middle-x" style="background-color: rgba(255, 255, 255, 0.15);width: fit-content">
 
                 <?php echo $slugEN ? 'More' : 'بیشتر'; ?>
             </button>

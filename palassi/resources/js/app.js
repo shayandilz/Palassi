@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 el: '.swiper-pagination',
                 clickable: true,
                 renderBullet: function (index, className) {
-                    return '<div class="tooltip my-4 position-relative lazy lh-sm ' + className + '" ><span class="tooltiptext ms-4 text-white text-start position-absolute z-top">' + (names[index]) + '</span></div>';
+                    return '<div class="tooltip my-4 position-relative lazy lh-sm ' + className + '" ><span class="tooltiptext ms-4 text-warning text-start position-absolute z-top">' + (names[index]) + '</span></div>';
                 }
             },
             on: {

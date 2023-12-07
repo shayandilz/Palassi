@@ -1,4 +1,15 @@
 @include media-breakpoint-up(lg) {
+  .logo_1{
+    font-size: 32px;
+  }
+  .logo_2{
+    font-size: 17px;
+    letter-spacing: 2px;
+  }
+  .logo_3{
+    font-size: 18px;
+    letter-spacing: 4px
+  }
   .home main .swiper1 > .swiper-wrapper{
     height: 100vh;
   }
@@ -33,6 +44,15 @@
   }
 }
 @include media-breakpoint-down(lg) {
+  #hero_video{
+    margin-top: 80px;
+  }
+  .logo_1{
+    font-size: 19px;
+  }
+  .logo_2,.logo_3{
+    font-size: 12px;
+  }
   .linkPortfolio {
     display: inline-block;
     white-space: nowrap;

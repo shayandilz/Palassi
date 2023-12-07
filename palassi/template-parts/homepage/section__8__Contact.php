@@ -16,7 +16,7 @@
                 <div class="d-flex flex-column align-items-start text-start justify-content-center gap-3 fs-6">
                     <?php $mobileNumber = get_field('mobile_number', 'option');
                     if ($mobileNumber) { ?>
-                    <div class="d-inline-flex gap-3 align-items-center justify-content-start text-white" data-aos="fade-down" data-aos-delay="200">
+                    <div class="d-inline-flex gap-3 align-items-center justify-content-start text-warning" data-aos="fade-down" data-aos-delay="200">
                         <i class="bi bi-phone"></i>
                         <a href="tel:<?= $mobileNumber; ?>">
                             <?= $mobileNumber; ?>
@@ -25,7 +25,7 @@
                     <?php }
                     $phoneNumber = get_field('phone_number', 'option');
                     if ($phoneNumber) { ?>
-                    <div class="d-inline-flex gap-3 align-items-center justify-content-start text-white" data-aos="fade-down" data-aos-delay="300">
+                    <div class="d-inline-flex gap-3 align-items-center justify-content-start text-warning" data-aos="fade-down" data-aos-delay="300">
                         <i class="bi bi-telephone"></i>
                         <a href="tel:<?= $phoneNumber; ?>">
                             <?= $phoneNumber; ?>
@@ -34,7 +34,7 @@
                     <?php }
                     $email = get_field('email', 'option');
                     if ($email) { ?>
-                    <div class="d-inline-flex gap-3 align-items-center justify-content-start text-white" data-aos="fade-down" data-aos-delay="400">
+                    <div class="d-inline-flex gap-3 align-items-center justify-content-start text-warning" data-aos="fade-down" data-aos-delay="400">
                         <i class="bi bi-envelope"></i>
                         <a href="mailto:<?= $email; ?>">
                             <?= $email; ?>
@@ -60,7 +60,7 @@
                 <div class="d-flex flex-column align-items-start text-start justify-content-center gap-3 fs-6">
                     <?php $addressOffice = get_field('address_one', 'option');
                     if ($addressOffice) { ?>
-                        <div class="d-inline-flex gap-3 align-items-center justify-content-start text-white" data-aos="fade-down" data-aos-delay="600">
+                        <div class="d-inline-flex gap-3 align-items-center justify-content-start text-warning" data-aos="fade-down" data-aos-delay="600">
                             <i class="bi bi-building"></i>
                             <a href="tel:<?= $addressOffice['url']; ?>">
                                 <?= $addressOffice['title']; ?>
@@ -69,7 +69,7 @@
                     <?php }
                     $addressStore = get_field('address_store', 'option');
                     if ($addressStore) { ?>
-                        <div class="d-inline-flex gap-3 align-items-center justify-content-start text-white" data-aos="fade-down" data-aos-delay="700">
+                        <div class="d-inline-flex gap-3 align-items-center justify-content-start text-warning" data-aos="fade-down" data-aos-delay="700">
                             <i class="bi bi-shop"></i>
                             <a href="tel:<?= esc_url($addressStore['url']); ?>">
                                 <?= $addressStore['title']; ?>

@@ -1,26 +1,12 @@
 <div class="col-2 d-lg-flex justify-content-start">
-    <ul class="list-unstyled d-lg-flex align-items-center d-none justify-content-center mb-0 gap-4">
-        <?php
-        if (have_rows('social_accounts', 'option')):
-            $first = true; // Variable to track the first <li> element
-            while (have_rows('social_accounts', 'option')) : the_row();
-                $svg = get_sub_field('svg');
-                $url = get_sub_field('urk'); ?>
-                <a href="<?= esc_url($url); ?>">
-                    <?= $svg; ?>
-                </a>
-                <?php
-                $first = false;
-            endwhile;
-        endif; ?>
-    </ul>
+
 </div>
-<a class="navbar-brand z-top col-8 d-flex flex-column align-items-center justify-content-center Shippori gap-1 text-white"
+<a class="navbar-brand z-top col-8 d-flex flex-column align-items-center justify-content-center Shippori gap-lg-1 text-warning"
    href="<?php echo esc_url(get_home_url()) ?>">
-    <span class="fw-bolder" style="font-size: 32px;">REZA PALASSI</span>
-    <div class="d-flex flex-column align-items-center justify-content-center gap-1 pb-2">
-        <span style="font-size: 17px;letter-spacing: 2px">Fine Persian Carpets</span>
-        <span style="font-size: 18px;letter-spacing: 4px">Since 1875</span>
+    <span class="logo_1" >REZA PALASSI</span>
+    <div class="d-flex flex-column align-items-center justify-content-center gap-lg-1 pb-lg-2">
+        <span class="logo_2" >Fine Persian Carpets</span>
+        <span class="logo_3" >Since 1875</span>
     </div>
 </a>
 

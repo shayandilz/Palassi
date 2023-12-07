@@ -4,7 +4,7 @@
 
     <div class="col-lg-10 col-12 row justify-content-center justify-content-lg-start px-0 align-items-center pt-lg-5">
         <div class="col-lg-6 pt-lg-5 pt-4">
-            <h1 class="text-primary display-5 fw-bolder" data-aos="fade-down" data-aos-delay="100">
+            <h1 class="text-primary display-5" data-aos="fade-down" data-aos-delay="100">
                 <?= get_field('antique_title'); ?>
             </h1>
         </div>
@@ -104,7 +104,7 @@
                                                         </div>
                                                         <div class="col-md-4">
                                                             <div class="d-flex flex-column justify-content-end align-items-center h-100">
-                                                                <h5 class="card-title text-white fs-6">Info : <?= get_the_title(); ?></h5>
+                                                                <h5 class="card-title text-warning fs-6">Info : <?= get_the_title(); ?></h5>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -114,8 +114,8 @@
 
                                     </div>
                                     <!-- Navigation buttons -->
-                                    <div class="swiper-button-next text-white"></div>
-                                    <div class="swiper-button-prev text-white"></div>
+                                    <div class="swiper-button-next text-warning"></div>
+                                    <div class="swiper-button-prev text-warning"></div>
                                 </div>
                             <?php }
                             wp_reset_postdata(); ?>
